@@ -22,5 +22,16 @@ namespace Venta_Comida.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-DVQ5DQP\\SQLEXPRESS;Initial Catalog=BdD_Venta_Comida;Integrate" +
+            "d Security=True")]
+        public string BdD_Venta_ComidaConnectionString {
+            get {
+                return ((string)(this["BdD_Venta_ComidaConnectionString"]));
+            }
+        }
     }
 }

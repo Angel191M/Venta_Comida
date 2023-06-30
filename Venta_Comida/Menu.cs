@@ -53,5 +53,10 @@ namespace Venta_Comida
             rep.Show();
             this.Hide();
         }
+
+        private void botonSalir_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

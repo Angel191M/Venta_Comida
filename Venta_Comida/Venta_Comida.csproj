@@ -47,6 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BdD_Venta_ComidaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BdD_Venta_ComidaDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ConexionBaseDatos.cs" />
     <Compile Include="Controles\Limpiar.cs" />
     <Compile Include="FMenu.cs" />
@@ -134,6 +139,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="BdD_Venta_ComidaDataSet.xsc">
+      <DependentUpon>BdD_Venta_ComidaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BdD_Venta_ComidaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BdD_Venta_ComidaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BdD_Venta_ComidaDataSet.xss">
+      <DependentUpon>BdD_Venta_ComidaDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

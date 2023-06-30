@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textCuenta = new System.Windows.Forms.TextBox();
             this.textClave = new System.Windows.Forms.TextBox();
             this.botonIngreso = new System.Windows.Forms.Button();
             this.botonCancelar = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(36, 254);
+            this.label1.Location = new System.Drawing.Point(36, 299);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(94, 26);
@@ -51,7 +54,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(36, 313);
+            this.label2.Location = new System.Drawing.Point(36, 375);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 26);
@@ -61,7 +64,7 @@
             // textCuenta
             // 
             this.textCuenta.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textCuenta.Location = new System.Drawing.Point(160, 254);
+            this.textCuenta.Location = new System.Drawing.Point(160, 299);
             this.textCuenta.Margin = new System.Windows.Forms.Padding(4);
             this.textCuenta.Name = "textCuenta";
             this.textCuenta.Size = new System.Drawing.Size(173, 30);
@@ -70,7 +73,7 @@
             // textClave
             // 
             this.textClave.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textClave.Location = new System.Drawing.Point(160, 308);
+            this.textClave.Location = new System.Drawing.Point(160, 375);
             this.textClave.Margin = new System.Windows.Forms.Padding(4);
             this.textClave.Name = "textClave";
             this.textClave.PasswordChar = '*';
@@ -82,7 +85,7 @@
             this.botonIngreso.BackColor = System.Drawing.Color.Maroon;
             this.botonIngreso.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonIngreso.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.botonIngreso.Location = new System.Drawing.Point(108, 370);
+            this.botonIngreso.Location = new System.Drawing.Point(120, 457);
             this.botonIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.botonIngreso.Name = "botonIngreso";
             this.botonIngreso.Size = new System.Drawing.Size(188, 44);
@@ -96,7 +99,7 @@
             this.botonCancelar.BackColor = System.Drawing.Color.Maroon;
             this.botonCancelar.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonCancelar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.botonCancelar.Location = new System.Drawing.Point(108, 434);
+            this.botonCancelar.Location = new System.Drawing.Point(120, 532);
             this.botonCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.botonCancelar.Name = "botonCancelar";
             this.botonCancelar.Size = new System.Drawing.Size(188, 44);
@@ -105,12 +108,23 @@
             this.botonCancelar.UseVisualStyleBackColor = false;
             this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(120, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
-            this.ClientSize = new System.Drawing.Size(420, 494);
+            this.ClientSize = new System.Drawing.Size(432, 603);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.botonCancelar);
             this.Controls.Add(this.botonIngreso);
             this.Controls.Add(this.textClave);
@@ -121,6 +135,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Autenticacion";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,6 +148,7 @@
         private System.Windows.Forms.TextBox textClave;
         private System.Windows.Forms.Button botonIngreso;
         private System.Windows.Forms.Button botonCancelar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

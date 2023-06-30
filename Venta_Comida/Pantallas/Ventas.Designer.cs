@@ -56,9 +56,9 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1680, 208);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -67,7 +67,7 @@
             // textClientes
             // 
             this.textClientes.Location = new System.Drawing.Point(1396, 119);
-            this.textClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textClientes.Margin = new System.Windows.Forms.Padding(4);
             this.textClientes.Name = "textClientes";
             this.textClientes.Size = new System.Drawing.Size(132, 38);
             this.textClientes.TabIndex = 7;
@@ -75,7 +75,7 @@
             // textSuministros
             // 
             this.textSuministros.Location = new System.Drawing.Point(1017, 119);
-            this.textSuministros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textSuministros.Margin = new System.Windows.Forms.Padding(4);
             this.textSuministros.Name = "textSuministros";
             this.textSuministros.Size = new System.Drawing.Size(132, 38);
             this.textSuministros.TabIndex = 6;
@@ -83,7 +83,7 @@
             // textHamburguesa
             // 
             this.textHamburguesa.Location = new System.Drawing.Point(537, 119);
-            this.textHamburguesa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textHamburguesa.Margin = new System.Windows.Forms.Padding(4);
             this.textHamburguesa.Name = "textHamburguesa";
             this.textHamburguesa.Size = new System.Drawing.Size(132, 38);
             this.textHamburguesa.TabIndex = 5;
@@ -91,7 +91,7 @@
             // textVentas
             // 
             this.textVentas.Location = new System.Drawing.Point(135, 119);
-            this.textVentas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textVentas.Margin = new System.Windows.Forms.Padding(4);
             this.textVentas.Name = "textVentas";
             this.textVentas.Size = new System.Drawing.Size(132, 38);
             this.textVentas.TabIndex = 4;
@@ -142,9 +142,9 @@
             this.Hamburguesas.BackColor = System.Drawing.Color.Maroon;
             this.Hamburguesas.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Hamburguesas.Location = new System.Drawing.Point(95, 244);
-            this.Hamburguesas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Hamburguesas.Margin = new System.Windows.Forms.Padding(4);
             this.Hamburguesas.Name = "Hamburguesas";
-            this.Hamburguesas.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Hamburguesas.Padding = new System.Windows.Forms.Padding(4);
             this.Hamburguesas.Size = new System.Drawing.Size(411, 485);
             this.Hamburguesas.TabIndex = 1;
             this.Hamburguesas.TabStop = false;
@@ -155,9 +155,9 @@
             this.groupBox2.BackColor = System.Drawing.Color.Maroon;
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(652, 244);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(411, 485);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
@@ -168,9 +168,9 @@
             this.groupBox3.BackColor = System.Drawing.Color.Maroon;
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(1213, 244);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(411, 485);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
@@ -180,7 +180,7 @@
             // 
             this.botonAtras.BackColor = System.Drawing.Color.Gold;
             this.botonAtras.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonAtras.Location = new System.Drawing.Point(1386, 735);
+            this.botonAtras.Location = new System.Drawing.Point(13, 940);
             this.botonAtras.Margin = new System.Windows.Forms.Padding(4);
             this.botonAtras.Name = "botonAtras";
             this.botonAtras.Size = new System.Drawing.Size(322, 75);
@@ -194,13 +194,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
-            this.ClientSize = new System.Drawing.Size(1712, 814);
+            this.ClientSize = new System.Drawing.Size(1924, 1028);
             this.Controls.Add(this.botonAtras);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.Hamburguesas);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Ventas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte de Ventas";

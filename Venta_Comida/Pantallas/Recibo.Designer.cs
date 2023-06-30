@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Recibo));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -41,6 +42,10 @@
             this.textFecha = new System.Windows.Forms.TextBox();
             this.botonImprimir = new System.Windows.Forms.Button();
             this.botonCancelar = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textCI = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -69,7 +74,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(41, 199);
+            this.label3.Location = new System.Drawing.Point(35, 242);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 26);
@@ -121,19 +126,19 @@
             // textNombreCom
             // 
             this.textNombreCom.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textNombreCom.Location = new System.Drawing.Point(112, 169);
+            this.textNombreCom.Location = new System.Drawing.Point(257, 138);
             this.textNombreCom.Margin = new System.Windows.Forms.Padding(4);
             this.textNombreCom.Name = "textNombreCom";
-            this.textNombreCom.Size = new System.Drawing.Size(576, 26);
+            this.textNombreCom.Size = new System.Drawing.Size(431, 26);
             this.textNombreCom.TabIndex = 7;
             // 
             // textDetalle
             // 
             this.textDetalle.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textDetalle.Location = new System.Drawing.Point(112, 242);
+            this.textDetalle.Location = new System.Drawing.Point(136, 242);
             this.textDetalle.Margin = new System.Windows.Forms.Padding(4);
             this.textDetalle.Name = "textDetalle";
-            this.textDetalle.Size = new System.Drawing.Size(576, 26);
+            this.textDetalle.Size = new System.Drawing.Size(552, 26);
             this.textDetalle.TabIndex = 8;
             // 
             // textPrecio
@@ -179,12 +184,46 @@
             this.botonCancelar.UseVisualStyleBackColor = false;
             this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(41, 186);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(163, 26);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "CI del Cliente:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // textCI
+            // 
+            this.textCI.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textCI.Location = new System.Drawing.Point(212, 189);
+            this.textCI.Margin = new System.Windows.Forms.Padding(4);
+            this.textCI.Name = "textCI";
+            this.textCI.Size = new System.Drawing.Size(476, 26);
+            this.textCI.TabIndex = 14;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(40, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // Recibo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(808, 457);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.textCI);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.botonCancelar);
             this.Controls.Add(this.botonImprimir);
             this.Controls.Add(this.textFecha);
@@ -202,6 +241,7 @@
             this.Name = "Recibo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Recibo";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,5 +262,8 @@
         private System.Windows.Forms.TextBox textFecha;
         private System.Windows.Forms.Button botonImprimir;
         private System.Windows.Forms.Button botonCancelar;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textCI;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

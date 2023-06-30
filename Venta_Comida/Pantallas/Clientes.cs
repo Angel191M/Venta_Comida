@@ -36,5 +36,19 @@ namespace Venta_Comida.Pantallas
             LimpiarTodo limpiador = new LimpiarTodo();
             limpiador.Limpiar(GroupBoxClientes);
         }
+
+        private void botonCancelarB_Click(object sender, EventArgs e)
+        {
+            GroupBox GroupBoxClientes = groupBox2;
+            LimpiarTodo limpiador = new LimpiarTodo();
+            limpiador.Limpiar(GroupBoxClientes);
+        }
+
+        private void Clientes_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'bdD_Venta_ComidaDataSet.Clientes' Puede moverla o quitarla según sea necesario.
+            this.clientesTableAdapter.Fill(this.bdD_Venta_ComidaDataSet.Clientes);
+
+        }
     }
 }
