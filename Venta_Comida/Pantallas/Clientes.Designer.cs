@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.botonAtras = new System.Windows.Forms.Button();
             this.textCelular = new System.Windows.Forms.TextBox();
@@ -45,25 +46,25 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.botonCancelarB = new System.Windows.Forms.Button();
             this.botonBuscar = new System.Windows.Forms.Button();
             this.textBuscar = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.botonCancelarB = new System.Windows.Forms.Button();
             this.dataClientes = new System.Windows.Forms.DataGridView();
-            this.bdD_Venta_ComidaDataSet = new Venta_Comida.BdD_Venta_ComidaDataSet();
-            this.bdDVentaComidaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.clientesTableAdapter = new Venta_Comida.BdD_Venta_ComidaDataSetTableAdapters.ClientesTableAdapter();
             this.cIclienteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.apellidosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.celularDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.clientesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bdD_Venta_ComidaDataSet = new Venta_Comida.BdD_Venta_ComidaDataSet();
+            this.bdDVentaComidaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.clientesTableAdapter = new Venta_Comida.BdD_Venta_ComidaDataSetTableAdapters.ClientesTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataClientes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdD_Venta_ComidaDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdDVentaComidaDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -146,6 +147,7 @@
             this.botonEliminar.TabIndex = 8;
             this.botonEliminar.Text = "Eliminar";
             this.botonEliminar.UseVisualStyleBackColor = false;
+            this.botonEliminar.Click += new System.EventHandler(this.botonEliminar_Click);
             // 
             // botonModificar
             // 
@@ -157,6 +159,7 @@
             this.botonModificar.TabIndex = 7;
             this.botonModificar.Text = "Modificar";
             this.botonModificar.UseVisualStyleBackColor = false;
+            this.botonModificar.Click += new System.EventHandler(this.botonModificar_Click);
             // 
             // botonAgregar
             // 
@@ -168,6 +171,7 @@
             this.botonAgregar.TabIndex = 6;
             this.botonAgregar.Text = "Agregar";
             this.botonAgregar.UseVisualStyleBackColor = false;
+            this.botonAgregar.Click += new System.EventHandler(this.botonAgregar_Click);
             // 
             // textNombres
             // 
@@ -239,6 +243,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Clientes:";
             // 
+            // botonCancelarB
+            // 
+            this.botonCancelarB.BackColor = System.Drawing.Color.White;
+            this.botonCancelarB.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonCancelarB.Location = new System.Drawing.Point(1034, 45);
+            this.botonCancelarB.Margin = new System.Windows.Forms.Padding(4);
+            this.botonCancelarB.Name = "botonCancelarB";
+            this.botonCancelarB.Size = new System.Drawing.Size(148, 54);
+            this.botonCancelarB.TabIndex = 21;
+            this.botonCancelarB.Text = "Cancelar";
+            this.botonCancelarB.UseVisualStyleBackColor = false;
+            this.botonCancelarB.Click += new System.EventHandler(this.botonCancelarB_Click);
+            // 
             // botonBuscar
             // 
             this.botonBuscar.BackColor = System.Drawing.Color.White;
@@ -271,23 +288,18 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "Buscar:";
             // 
-            // botonCancelarB
-            // 
-            this.botonCancelarB.BackColor = System.Drawing.Color.White;
-            this.botonCancelarB.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonCancelarB.Location = new System.Drawing.Point(1034, 45);
-            this.botonCancelarB.Margin = new System.Windows.Forms.Padding(4);
-            this.botonCancelarB.Name = "botonCancelarB";
-            this.botonCancelarB.Size = new System.Drawing.Size(148, 54);
-            this.botonCancelarB.TabIndex = 21;
-            this.botonCancelarB.Text = "Cancelar";
-            this.botonCancelarB.UseVisualStyleBackColor = false;
-            this.botonCancelarB.Click += new System.EventHandler(this.botonCancelarB_Click);
-            // 
             // dataClientes
             // 
             this.dataClientes.AutoGenerateColumns = false;
             this.dataClientes.BackgroundColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataClientes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.cIclienteDataGridViewTextBoxColumn,
@@ -295,40 +307,21 @@
             this.nombresDataGridViewTextBoxColumn,
             this.celularDataGridViewTextBoxColumn});
             this.dataClientes.DataSource = this.clientesBindingSource;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataClientes.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataClientes.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataClientes.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dataClientes.Location = new System.Drawing.Point(586, 167);
             this.dataClientes.Name = "dataClientes";
             this.dataClientes.RowHeadersWidth = 51;
             this.dataClientes.RowTemplate.Height = 24;
-            this.dataClientes.Size = new System.Drawing.Size(1054, 750);
+            this.dataClientes.Size = new System.Drawing.Size(1251, 750);
             this.dataClientes.TabIndex = 5;
-            // 
-            // bdD_Venta_ComidaDataSet
-            // 
-            this.bdD_Venta_ComidaDataSet.DataSetName = "BdD_Venta_ComidaDataSet";
-            this.bdD_Venta_ComidaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bdDVentaComidaDataSetBindingSource
-            // 
-            this.bdDVentaComidaDataSetBindingSource.DataSource = this.bdD_Venta_ComidaDataSet;
-            this.bdDVentaComidaDataSetBindingSource.Position = 0;
-            // 
-            // clientesBindingSource
-            // 
-            this.clientesBindingSource.DataMember = "Clientes";
-            this.clientesBindingSource.DataSource = this.bdD_Venta_ComidaDataSet;
-            // 
-            // clientesTableAdapter
-            // 
-            this.clientesTableAdapter.ClearBeforeFill = true;
             // 
             // cIclienteDataGridViewTextBoxColumn
             // 
@@ -362,6 +355,25 @@
             this.celularDataGridViewTextBoxColumn.Name = "celularDataGridViewTextBoxColumn";
             this.celularDataGridViewTextBoxColumn.Width = 250;
             // 
+            // clientesBindingSource
+            // 
+            this.clientesBindingSource.DataMember = "Clientes";
+            this.clientesBindingSource.DataSource = this.bdD_Venta_ComidaDataSet;
+            // 
+            // bdD_Venta_ComidaDataSet
+            // 
+            this.bdD_Venta_ComidaDataSet.DataSetName = "BdD_Venta_ComidaDataSet";
+            this.bdD_Venta_ComidaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bdDVentaComidaDataSetBindingSource
+            // 
+            this.bdDVentaComidaDataSetBindingSource.DataSource = this.bdD_Venta_ComidaDataSet;
+            this.bdDVentaComidaDataSetBindingSource.Position = 0;
+            // 
+            // clientesTableAdapter
+            // 
+            this.clientesTableAdapter.ClearBeforeFill = true;
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -381,9 +393,9 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataClientes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdD_Venta_ComidaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdDVentaComidaDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.clientesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

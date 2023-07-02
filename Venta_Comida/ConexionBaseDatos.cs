@@ -14,12 +14,15 @@ namespace Venta_Comida
 
         public AdministradorConexionBD()
         {
+            //Data Source=DESKTOP-DVQ5DQP\SQLEXPRESS;Initial Catalog=BdD_Venta_Comida;Integrated Security=True
             string servidor = "DESKTOP-DVQ5DQP\\SQLEXPRESS";
             string baseDatos = "BdD_Venta_Comida";
             string usuario = "DESKTOP-DVQ5DQP\\ACER";
             string contraseña = "";
             cadenaConexion = $"Data Source={servidor};Initial Catalog={baseDatos};User ID={usuario};Password={contraseña}";
         }
+
+        public SqlConnection Conexion { get { return conexion; } }
 
         public bool AbrirConexion()
         {

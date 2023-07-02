@@ -28,7 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.botonAtras = new System.Windows.Forms.Button();
             this.botonLimpiar = new System.Windows.Forms.Button();
             this.botonEliminar = new System.Windows.Forms.Button();
             this.botonModificar = new System.Windows.Forms.Button();
@@ -48,9 +51,20 @@
             this.botonBuscar = new System.Windows.Forms.Button();
             this.textBuscar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.botonAtras = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.bdD_Venta_ComidaDataSet = new Venta_Comida.BdD_Venta_ComidaDataSet();
+            this.menuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.menuTableAdapter = new Venta_Comida.BdD_Venta_ComidaDataSetTableAdapters.MenuTableAdapter();
+            this.iDPlatilloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantidadinventarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaelaboracionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.precioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdD_Venta_ComidaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -80,6 +94,19 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Gestión del Menú:";
+            // 
+            // botonAtras
+            // 
+            this.botonAtras.BackColor = System.Drawing.Color.Gold;
+            this.botonAtras.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonAtras.Location = new System.Drawing.Point(65, 940);
+            this.botonAtras.Margin = new System.Windows.Forms.Padding(4);
+            this.botonAtras.Name = "botonAtras";
+            this.botonAtras.Size = new System.Drawing.Size(322, 75);
+            this.botonAtras.TabIndex = 17;
+            this.botonAtras.Text = "MENÚ PRINCIPAL";
+            this.botonAtras.UseVisualStyleBackColor = false;
+            this.botonAtras.Click += new System.EventHandler(this.botonAtras_Click);
             // 
             // botonLimpiar
             // 
@@ -291,18 +318,87 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Buscar:";
             // 
-            // botonAtras
+            // dataGridView1
             // 
-            this.botonAtras.BackColor = System.Drawing.Color.Gold;
-            this.botonAtras.Font = new System.Drawing.Font("Times New Roman", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonAtras.Location = new System.Drawing.Point(65, 940);
-            this.botonAtras.Margin = new System.Windows.Forms.Padding(4);
-            this.botonAtras.Name = "botonAtras";
-            this.botonAtras.Size = new System.Drawing.Size(322, 75);
-            this.botonAtras.TabIndex = 17;
-            this.botonAtras.Text = "MENÚ PRINCIPAL";
-            this.botonAtras.UseVisualStyleBackColor = false;
-            this.botonAtras.Click += new System.EventHandler(this.botonAtras_Click);
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.PapayaWhip;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDPlatilloDataGridViewTextBoxColumn,
+            this.nombreDataGridViewTextBoxColumn,
+            this.cantidadinventarioDataGridViewTextBoxColumn,
+            this.fechaelaboracionDataGridViewTextBoxColumn,
+            this.precioDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.menuBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(477, 174);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(1102, 422);
+            this.dataGridView1.TabIndex = 4;
+            // 
+            // bdD_Venta_ComidaDataSet
+            // 
+            this.bdD_Venta_ComidaDataSet.DataSetName = "BdD_Venta_ComidaDataSet";
+            this.bdD_Venta_ComidaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // menuBindingSource
+            // 
+            this.menuBindingSource.DataMember = "Menu";
+            this.menuBindingSource.DataSource = this.bdD_Venta_ComidaDataSet;
+            // 
+            // menuTableAdapter
+            // 
+            this.menuTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDPlatilloDataGridViewTextBoxColumn
+            // 
+            this.iDPlatilloDataGridViewTextBoxColumn.DataPropertyName = "ID_Platillo";
+            this.iDPlatilloDataGridViewTextBoxColumn.HeaderText = "ID_Platillo";
+            this.iDPlatilloDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDPlatilloDataGridViewTextBoxColumn.Name = "iDPlatilloDataGridViewTextBoxColumn";
+            this.iDPlatilloDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDPlatilloDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.Width = 300;
+            // 
+            // cantidadinventarioDataGridViewTextBoxColumn
+            // 
+            this.cantidadinventarioDataGridViewTextBoxColumn.DataPropertyName = "Cantidad_inventario";
+            this.cantidadinventarioDataGridViewTextBoxColumn.HeaderText = "Cantidad_inventario";
+            this.cantidadinventarioDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cantidadinventarioDataGridViewTextBoxColumn.Name = "cantidadinventarioDataGridViewTextBoxColumn";
+            this.cantidadinventarioDataGridViewTextBoxColumn.Width = 220;
+            // 
+            // fechaelaboracionDataGridViewTextBoxColumn
+            // 
+            this.fechaelaboracionDataGridViewTextBoxColumn.DataPropertyName = "Fecha_elaboracion";
+            this.fechaelaboracionDataGridViewTextBoxColumn.HeaderText = "Fecha_elaboracion";
+            this.fechaelaboracionDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.fechaelaboracionDataGridViewTextBoxColumn.Name = "fechaelaboracionDataGridViewTextBoxColumn";
+            this.fechaelaboracionDataGridViewTextBoxColumn.Width = 300;
+            // 
+            // precioDataGridViewTextBoxColumn
+            // 
+            this.precioDataGridViewTextBoxColumn.DataPropertyName = "Precio";
+            this.precioDataGridViewTextBoxColumn.HeaderText = "Precio";
+            this.precioDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.precioDataGridViewTextBoxColumn.Name = "precioDataGridViewTextBoxColumn";
+            this.precioDataGridViewTextBoxColumn.Width = 125;
             // 
             // Suministros
             // 
@@ -310,6 +406,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(1924, 1028);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -317,10 +414,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reporte de Suministros";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Suministros_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bdD_Venta_ComidaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.menuBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,5 +449,14 @@
         private System.Windows.Forms.TextBox textBuscar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button botonAtras;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private BdD_Venta_ComidaDataSet bdD_Venta_ComidaDataSet;
+        private System.Windows.Forms.BindingSource menuBindingSource;
+        private BdD_Venta_ComidaDataSetTableAdapters.MenuTableAdapter menuTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDPlatilloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cantidadinventarioDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaelaboracionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn precioDataGridViewTextBoxColumn;
     }
 }

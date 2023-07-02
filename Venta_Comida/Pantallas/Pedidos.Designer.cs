@@ -87,6 +87,20 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.botonR1 = new System.Windows.Forms.Button();
+            this.botonR2 = new System.Windows.Forms.Button();
+            this.botonR3 = new System.Windows.Forms.Button();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.botonJ1 = new System.Windows.Forms.Button();
+            this.botonJ2 = new System.Windows.Forms.Button();
+            this.botonJ3 = new System.Windows.Forms.Button();
+            this.botonJ4 = new System.Windows.Forms.Button();
+            this.botonJ5 = new System.Windows.Forms.Button();
+            this.botonJ6 = new System.Windows.Forms.Button();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.botonCalcularTotal = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -104,11 +118,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Maroon;
+            this.panel1.Controls.Add(this.botonCalcularTotal);
             this.panel1.Controls.Add(this.botonAtras);
             this.panel1.Controls.Add(this.botonCliente);
             this.panel1.Controls.Add(this.botonCancel);
@@ -187,6 +204,7 @@
             // 
             // textTCosto
             // 
+            this.textTCosto.Enabled = false;
             this.textTCosto.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textTCosto.Location = new System.Drawing.Point(231, 582);
             this.textTCosto.Margin = new System.Windows.Forms.Padding(4);
@@ -196,6 +214,7 @@
             // 
             // textUCosto
             // 
+            this.textUCosto.Enabled = false;
             this.textUCosto.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textUCosto.Location = new System.Drawing.Point(231, 519);
             this.textUCosto.Margin = new System.Windows.Forms.Padding(4);
@@ -338,24 +357,24 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(4, 48);
+            this.label9.Location = new System.Drawing.Point(62, 47);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(254, 28);
+            this.label9.Size = new System.Drawing.Size(146, 28);
             this.label9.TabIndex = 1;
-            this.label9.Text = "Precio: Promo 2 x 29 Bs";
+            this.label9.Text = "Precio: 23 Bs";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(-1, 15);
+            this.label8.Location = new System.Drawing.Point(50, 15);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(266, 28);
+            this.label8.Size = new System.Drawing.Size(178, 28);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Hamburguesa Americana";
+            this.label8.Text = "Pipocas de Pollo";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // panel4
@@ -373,23 +392,23 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(47, 48);
+            this.label10.Location = new System.Drawing.Point(65, 47);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(146, 28);
             this.label10.TabIndex = 1;
-            this.label10.Text = "Precio: 18 Bs";
+            this.label10.Text = "Precio: 75 Bs";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(-1, 15);
+            this.label11.Location = new System.Drawing.Point(59, 15);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(266, 28);
+            this.label11.Size = new System.Drawing.Size(161, 28);
             this.label11.TabIndex = 0;
-            this.label11.Text = "Hamburguesa Americana";
+            this.label11.Text = "Pollo al Horno";
             // 
             // panel3
             // 
@@ -406,23 +425,23 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(4, 50);
+            this.label12.Location = new System.Drawing.Point(62, 47);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(254, 28);
+            this.label12.Size = new System.Drawing.Size(146, 28);
             this.label12.TabIndex = 2;
-            this.label12.Text = "Precio: Promo 2 x 29 Bs";
+            this.label12.Text = "Precio: 25 Bs";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(2, 15);
+            this.label13.Location = new System.Drawing.Point(38, 15);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(261, 28);
+            this.label13.Size = new System.Drawing.Size(197, 28);
             this.label13.TabIndex = 0;
-            this.label13.Text = "Hamburguesa Hawaiana";
+            this.label13.Text = "Sandwich de Pollo";
             // 
             // panel5
             // 
@@ -439,23 +458,23 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(2, 15);
+            this.label15.Location = new System.Drawing.Point(31, 15);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(261, 28);
+            this.label15.Size = new System.Drawing.Size(199, 28);
             this.label15.TabIndex = 2;
-            this.label15.Text = "Hamburguesa Hawaiana";
+            this.label15.Text = "Pollo a la Broaster";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(47, 48);
+            this.label14.Location = new System.Drawing.Point(58, 47);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(146, 28);
             this.label14.TabIndex = 1;
-            this.label14.Text = "Precio: 18 Bs";
+            this.label14.Text = "Precio: 25 Bs";
             // 
             // panel6
             // 
@@ -472,23 +491,23 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(47, 48);
+            this.label16.Location = new System.Drawing.Point(57, 48);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(146, 28);
             this.label16.TabIndex = 1;
-            this.label16.Text = "Precio: 18 Bs";
+            this.label16.Text = "Precio: 26 Bs";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(4, 15);
+            this.label17.Location = new System.Drawing.Point(49, 15);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(257, 28);
+            this.label17.Size = new System.Drawing.Size(173, 28);
             this.label17.TabIndex = 0;
-            this.label17.Text = "Hamburguesa Mexicana";
+            this.label17.Text = "Bagel Sandwich";
             // 
             // panel7
             // 
@@ -505,23 +524,23 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(4, 15);
+            this.label19.Location = new System.Drawing.Point(77, 15);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(257, 28);
+            this.label19.Size = new System.Drawing.Size(122, 28);
             this.label19.TabIndex = 2;
-            this.label19.Text = "Hamburguesa Mexicana";
+            this.label19.Text = "Socafusión";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(47, 48);
+            this.label18.Location = new System.Drawing.Point(67, 48);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(146, 28);
             this.label18.TabIndex = 1;
-            this.label18.Text = "Precio: 29 Bs";
+            this.label18.Text = "Precio: 22 Bs";
             // 
             // panel8
             // 
@@ -541,20 +560,20 @@
             this.label20.Location = new System.Drawing.Point(61, 48);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(134, 28);
+            this.label20.Size = new System.Drawing.Size(146, 28);
             this.label20.TabIndex = 1;
-            this.label20.Text = "Precio: 6 Bs";
+            this.label20.Text = "Precio: 22 Bs";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(86, 15);
+            this.label21.Location = new System.Drawing.Point(47, 15);
             this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(91, 28);
+            this.label21.Size = new System.Drawing.Size(184, 28);
             this.label21.TabIndex = 0;
-            this.label21.Text = "Bebidas";
+            this.label21.Text = "Socafusión (P-D)";
             this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // panel9
@@ -575,20 +594,20 @@
             this.label22.Location = new System.Drawing.Point(56, 48);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(134, 28);
+            this.label22.Size = new System.Drawing.Size(146, 28);
             this.label22.TabIndex = 1;
-            this.label22.Text = "Precio: 5 Bs";
+            this.label22.Text = "Precio: 20 Bs";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(21, 15);
+            this.label23.Location = new System.Drawing.Point(74, 15);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(221, 28);
+            this.label23.Size = new System.Drawing.Size(109, 28);
             this.label23.TabIndex = 0;
-            this.label23.Text = "Guarnición de Papas";
+            this.label23.Text = "Sandwich";
             // 
             // botonH1
             // 
@@ -614,6 +633,7 @@
             this.botonH2.TabIndex = 12;
             this.botonH2.Text = "Agregar";
             this.botonH2.UseVisualStyleBackColor = false;
+            this.botonH2.Click += new System.EventHandler(this.botonH2_Click);
             // 
             // botonH3
             // 
@@ -626,6 +646,7 @@
             this.botonH3.TabIndex = 13;
             this.botonH3.Text = "Agregar";
             this.botonH3.UseVisualStyleBackColor = false;
+            this.botonH3.Click += new System.EventHandler(this.botonH3_Click);
             // 
             // botonH4
             // 
@@ -638,6 +659,7 @@
             this.botonH4.TabIndex = 14;
             this.botonH4.Text = "Agregar";
             this.botonH4.UseVisualStyleBackColor = false;
+            this.botonH4.Click += new System.EventHandler(this.botonH4_Click);
             // 
             // botonH8
             // 
@@ -650,6 +672,7 @@
             this.botonH8.TabIndex = 15;
             this.botonH8.Text = "Agregar";
             this.botonH8.UseVisualStyleBackColor = false;
+            this.botonH8.Click += new System.EventHandler(this.botonH8_Click);
             // 
             // botonH7
             // 
@@ -662,6 +685,7 @@
             this.botonH7.TabIndex = 16;
             this.botonH7.Text = "Agregar";
             this.botonH7.UseVisualStyleBackColor = false;
+            this.botonH7.Click += new System.EventHandler(this.botonH7_Click);
             // 
             // botonH6
             // 
@@ -674,6 +698,7 @@
             this.botonH6.TabIndex = 17;
             this.botonH6.Text = "Agregar";
             this.botonH6.UseVisualStyleBackColor = false;
+            this.botonH6.Click += new System.EventHandler(this.botonH6_Click);
             // 
             // botonH5
             // 
@@ -686,6 +711,7 @@
             this.botonH5.TabIndex = 18;
             this.botonH5.Text = "Agregar";
             this.botonH5.UseVisualStyleBackColor = false;
+            this.botonH5.Click += new System.EventHandler(this.botonH5_Click);
             // 
             // pictureBox2
             // 
@@ -767,12 +793,197 @@
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(66, 816);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 28;
+            this.pictureBox9.TabStop = false;
+            // 
+            // botonR1
+            // 
+            this.botonR1.BackColor = System.Drawing.Color.White;
+            this.botonR1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonR1.Location = new System.Drawing.Point(323, 829);
+            this.botonR1.Margin = new System.Windows.Forms.Padding(4);
+            this.botonR1.Name = "botonR1";
+            this.botonR1.Size = new System.Drawing.Size(111, 53);
+            this.botonR1.TabIndex = 29;
+            this.botonR1.Text = "Coca Cola";
+            this.botonR1.UseVisualStyleBackColor = false;
+            this.botonR1.Click += new System.EventHandler(this.botonR1_Click);
+            // 
+            // botonR2
+            // 
+            this.botonR2.BackColor = System.Drawing.Color.White;
+            this.botonR2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonR2.Location = new System.Drawing.Point(448, 893);
+            this.botonR2.Margin = new System.Windows.Forms.Padding(4);
+            this.botonR2.Name = "botonR2";
+            this.botonR2.Size = new System.Drawing.Size(111, 53);
+            this.botonR2.TabIndex = 30;
+            this.botonR2.Text = "Fanta";
+            this.botonR2.UseVisualStyleBackColor = false;
+            this.botonR2.Click += new System.EventHandler(this.botonR2_Click);
+            // 
+            // botonR3
+            // 
+            this.botonR3.BackColor = System.Drawing.Color.White;
+            this.botonR3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonR3.Location = new System.Drawing.Point(321, 954);
+            this.botonR3.Margin = new System.Windows.Forms.Padding(4);
+            this.botonR3.Name = "botonR3";
+            this.botonR3.Size = new System.Drawing.Size(111, 53);
+            this.botonR3.TabIndex = 31;
+            this.botonR3.Text = "Sprite";
+            this.botonR3.UseVisualStyleBackColor = false;
+            this.botonR3.Click += new System.EventHandler(this.botonR3_Click);
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(662, 816);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(200, 200);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 32;
+            this.pictureBox10.TabStop = false;
+            // 
+            // botonJ1
+            // 
+            this.botonJ1.BackColor = System.Drawing.Color.White;
+            this.botonJ1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonJ1.Location = new System.Drawing.Point(901, 816);
+            this.botonJ1.Margin = new System.Windows.Forms.Padding(4);
+            this.botonJ1.Name = "botonJ1";
+            this.botonJ1.Size = new System.Drawing.Size(111, 53);
+            this.botonJ1.TabIndex = 33;
+            this.botonJ1.Text = "Frutilla";
+            this.botonJ1.UseVisualStyleBackColor = false;
+            this.botonJ1.Click += new System.EventHandler(this.botonJ1_Click);
+            // 
+            // botonJ2
+            // 
+            this.botonJ2.BackColor = System.Drawing.Color.White;
+            this.botonJ2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonJ2.Location = new System.Drawing.Point(901, 893);
+            this.botonJ2.Margin = new System.Windows.Forms.Padding(4);
+            this.botonJ2.Name = "botonJ2";
+            this.botonJ2.Size = new System.Drawing.Size(111, 53);
+            this.botonJ2.TabIndex = 34;
+            this.botonJ2.Text = "Platano";
+            this.botonJ2.UseVisualStyleBackColor = false;
+            this.botonJ2.Click += new System.EventHandler(this.botonJ2_Click);
+            // 
+            // botonJ3
+            // 
+            this.botonJ3.BackColor = System.Drawing.Color.White;
+            this.botonJ3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonJ3.Location = new System.Drawing.Point(901, 963);
+            this.botonJ3.Margin = new System.Windows.Forms.Padding(4);
+            this.botonJ3.Name = "botonJ3";
+            this.botonJ3.Size = new System.Drawing.Size(111, 53);
+            this.botonJ3.TabIndex = 35;
+            this.botonJ3.Text = "Limon";
+            this.botonJ3.UseVisualStyleBackColor = false;
+            this.botonJ3.Click += new System.EventHandler(this.botonJ3_Click);
+            // 
+            // botonJ4
+            // 
+            this.botonJ4.BackColor = System.Drawing.Color.White;
+            this.botonJ4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonJ4.Location = new System.Drawing.Point(1075, 816);
+            this.botonJ4.Margin = new System.Windows.Forms.Padding(4);
+            this.botonJ4.Name = "botonJ4";
+            this.botonJ4.Size = new System.Drawing.Size(111, 53);
+            this.botonJ4.TabIndex = 36;
+            this.botonJ4.Text = "Durazno";
+            this.botonJ4.UseVisualStyleBackColor = false;
+            this.botonJ4.Click += new System.EventHandler(this.botonJ4_Click);
+            // 
+            // botonJ5
+            // 
+            this.botonJ5.BackColor = System.Drawing.Color.White;
+            this.botonJ5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonJ5.Location = new System.Drawing.Point(1075, 893);
+            this.botonJ5.Margin = new System.Windows.Forms.Padding(4);
+            this.botonJ5.Name = "botonJ5";
+            this.botonJ5.Size = new System.Drawing.Size(111, 53);
+            this.botonJ5.TabIndex = 37;
+            this.botonJ5.Text = "Piña";
+            this.botonJ5.UseVisualStyleBackColor = false;
+            this.botonJ5.Click += new System.EventHandler(this.botonJ5_Click);
+            // 
+            // botonJ6
+            // 
+            this.botonJ6.BackColor = System.Drawing.Color.White;
+            this.botonJ6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonJ6.Location = new System.Drawing.Point(1075, 963);
+            this.botonJ6.Margin = new System.Windows.Forms.Padding(4);
+            this.botonJ6.Name = "botonJ6";
+            this.botonJ6.Size = new System.Drawing.Size(111, 53);
+            this.botonJ6.TabIndex = 38;
+            this.botonJ6.Text = "Papaya";
+            this.botonJ6.UseVisualStyleBackColor = false;
+            this.botonJ6.Click += new System.EventHandler(this.botonJ6_Click);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(298, 904);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(134, 28);
+            this.label24.TabIndex = 39;
+            this.label24.Text = "Precio: 6 Bs";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(1219, 904);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(146, 28);
+            this.label25.TabIndex = 40;
+            this.label25.Text = "Precio: 12 Bs";
+            // 
+            // botonCalcularTotal
+            // 
+            this.botonCalcularTotal.BackColor = System.Drawing.Color.White;
+            this.botonCalcularTotal.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonCalcularTotal.Location = new System.Drawing.Point(185, 746);
+            this.botonCalcularTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.botonCalcularTotal.Name = "botonCalcularTotal";
+            this.botonCalcularTotal.Size = new System.Drawing.Size(140, 43);
+            this.botonCalcularTotal.TabIndex = 17;
+            this.botonCalcularTotal.Text = "Calcular total";
+            this.botonCalcularTotal.UseVisualStyleBackColor = false;
+            this.botonCalcularTotal.Click += new System.EventHandler(this.botonCalcularTotal_Click);
+            // 
             // Pedidos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(1924, 1028);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.botonJ6);
+            this.Controls.Add(this.botonJ5);
+            this.Controls.Add(this.botonJ4);
+            this.Controls.Add(this.botonJ3);
+            this.Controls.Add(this.botonJ2);
+            this.Controls.Add(this.botonJ1);
+            this.Controls.Add(this.pictureBox10);
+            this.Controls.Add(this.botonR3);
+            this.Controls.Add(this.botonR2);
+            this.Controls.Add(this.botonR1);
+            this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
@@ -829,7 +1040,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -893,5 +1107,19 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Button botonR1;
+        private System.Windows.Forms.Button botonR2;
+        private System.Windows.Forms.Button botonR3;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Button botonJ1;
+        private System.Windows.Forms.Button botonJ2;
+        private System.Windows.Forms.Button botonJ3;
+        private System.Windows.Forms.Button botonJ4;
+        private System.Windows.Forms.Button botonJ5;
+        private System.Windows.Forms.Button botonJ6;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Button botonCalcularTotal;
     }
 }

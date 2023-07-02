@@ -116,6 +116,7 @@
             // 
             // textId
             // 
+            this.textId.Enabled = false;
             this.textId.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textId.Location = new System.Drawing.Point(679, 26);
             this.textId.Margin = new System.Windows.Forms.Padding(4);
@@ -134,6 +135,7 @@
             // 
             // textDetalle
             // 
+            this.textDetalle.Enabled = false;
             this.textDetalle.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textDetalle.Location = new System.Drawing.Point(136, 242);
             this.textDetalle.Margin = new System.Windows.Forms.Padding(4);
@@ -143,6 +145,7 @@
             // 
             // textPrecio
             // 
+            this.textPrecio.Enabled = false;
             this.textPrecio.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textPrecio.Location = new System.Drawing.Point(140, 299);
             this.textPrecio.Margin = new System.Windows.Forms.Padding(4);
@@ -152,12 +155,14 @@
             // 
             // textFecha
             // 
+            this.textFecha.Enabled = false;
             this.textFecha.Font = new System.Drawing.Font("Times New Roman", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textFecha.Location = new System.Drawing.Point(484, 299);
             this.textFecha.Margin = new System.Windows.Forms.Padding(4);
             this.textFecha.Name = "textFecha";
             this.textFecha.Size = new System.Drawing.Size(204, 26);
             this.textFecha.TabIndex = 10;
+            this.textFecha.TextChanged += new System.EventHandler(this.textFecha_TextChanged);
             // 
             // botonImprimir
             // 
@@ -170,6 +175,7 @@
             this.botonImprimir.TabIndex = 11;
             this.botonImprimir.Text = "Imprimir";
             this.botonImprimir.UseVisualStyleBackColor = false;
+            this.botonImprimir.Click += new System.EventHandler(this.botonImprimir_Click);
             // 
             // botonCancelar
             // 

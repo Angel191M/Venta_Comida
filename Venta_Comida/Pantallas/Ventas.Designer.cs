@@ -28,6 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textClientes = new System.Windows.Forms.TextBox();
             this.textSuministros = new System.Windows.Forms.TextBox();
@@ -41,7 +50,19 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.botonAtras = new System.Windows.Forms.Button();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.botonActualizar1 = new System.Windows.Forms.Button();
+            this.botonActualizar2 = new System.Windows.Forms.Button();
+            this.botonActualizar3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
+            this.Hamburguesas.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -140,6 +161,7 @@
             // Hamburguesas
             // 
             this.Hamburguesas.BackColor = System.Drawing.Color.Maroon;
+            this.Hamburguesas.Controls.Add(this.chart1);
             this.Hamburguesas.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Hamburguesas.Location = new System.Drawing.Point(95, 244);
             this.Hamburguesas.Margin = new System.Windows.Forms.Padding(4);
@@ -148,11 +170,12 @@
             this.Hamburguesas.Size = new System.Drawing.Size(411, 485);
             this.Hamburguesas.TabIndex = 1;
             this.Hamburguesas.TabStop = false;
-            this.Hamburguesas.Text = "Hamburguesas:";
+            this.Hamburguesas.Text = "Hamburguesas/Sandwich:";
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Maroon;
+            this.groupBox2.Controls.Add(this.chart2);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(652, 244);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
@@ -161,11 +184,12 @@
             this.groupBox2.Size = new System.Drawing.Size(411, 485);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Hamburguesas Preferidas:";
+            this.groupBox2.Text = "Platillos con Pollo Preferidos:";
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Maroon;
+            this.groupBox3.Controls.Add(this.chart3);
             this.groupBox3.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(1213, 244);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
@@ -174,7 +198,7 @@
             this.groupBox3.Size = new System.Drawing.Size(411, 485);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Hamburguesas menos Preferida:";
+            this.groupBox3.Text = "Platillos con Pollo menos Preferidos:";
             // 
             // botonAtras
             // 
@@ -189,12 +213,103 @@
             this.botonAtras.UseVisualStyleBackColor = false;
             this.botonAtras.Click += new System.EventHandler(this.botonAtras_Click);
             // 
+            // chart1
+            // 
+            this.chart1.BorderlineColor = System.Drawing.Color.Linen;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(0, 81);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(411, 404);
+            this.chart1.TabIndex = 0;
+            this.chart1.Text = "chart1";
+            // 
+            // chart2
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
+            this.chart2.Location = new System.Drawing.Point(0, 81);
+            this.chart2.Name = "chart2";
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart2.Series.Add(series2);
+            this.chart2.Size = new System.Drawing.Size(411, 404);
+            this.chart2.TabIndex = 0;
+            this.chart2.Text = "chart2";
+            // 
+            // chart3
+            // 
+            chartArea3.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart3.Legends.Add(legend3);
+            this.chart3.Location = new System.Drawing.Point(0, 81);
+            this.chart3.Name = "chart3";
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart3.Series.Add(series3);
+            this.chart3.Size = new System.Drawing.Size(411, 404);
+            this.chart3.TabIndex = 0;
+            this.chart3.Text = "chart3";
+            // 
+            // botonActualizar1
+            // 
+            this.botonActualizar1.BackColor = System.Drawing.Color.White;
+            this.botonActualizar1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonActualizar1.Location = new System.Drawing.Point(238, 752);
+            this.botonActualizar1.Margin = new System.Windows.Forms.Padding(4);
+            this.botonActualizar1.Name = "botonActualizar1";
+            this.botonActualizar1.Size = new System.Drawing.Size(111, 53);
+            this.botonActualizar1.TabIndex = 18;
+            this.botonActualizar1.Text = "Actualizar";
+            this.botonActualizar1.UseVisualStyleBackColor = false;
+            // 
+            // botonActualizar2
+            // 
+            this.botonActualizar2.BackColor = System.Drawing.Color.White;
+            this.botonActualizar2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonActualizar2.Location = new System.Drawing.Point(814, 752);
+            this.botonActualizar2.Margin = new System.Windows.Forms.Padding(4);
+            this.botonActualizar2.Name = "botonActualizar2";
+            this.botonActualizar2.Size = new System.Drawing.Size(111, 53);
+            this.botonActualizar2.TabIndex = 19;
+            this.botonActualizar2.Text = "Actualizar";
+            this.botonActualizar2.UseVisualStyleBackColor = false;
+            // 
+            // botonActualizar3
+            // 
+            this.botonActualizar3.BackColor = System.Drawing.Color.White;
+            this.botonActualizar3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonActualizar3.Location = new System.Drawing.Point(1372, 752);
+            this.botonActualizar3.Margin = new System.Windows.Forms.Padding(4);
+            this.botonActualizar3.Name = "botonActualizar3";
+            this.botonActualizar3.Size = new System.Drawing.Size(111, 53);
+            this.botonActualizar3.TabIndex = 20;
+            this.botonActualizar3.Text = "Actualizar";
+            this.botonActualizar3.UseVisualStyleBackColor = false;
+            // 
             // Ventas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Orange;
             this.ClientSize = new System.Drawing.Size(1924, 1028);
+            this.Controls.Add(this.botonActualizar3);
+            this.Controls.Add(this.botonActualizar2);
+            this.Controls.Add(this.botonActualizar1);
             this.Controls.Add(this.botonAtras);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -207,6 +322,12 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.Hamburguesas.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -226,5 +347,11 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button botonAtras;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
+        private System.Windows.Forms.Button botonActualizar1;
+        private System.Windows.Forms.Button botonActualizar2;
+        private System.Windows.Forms.Button botonActualizar3;
     }
 }
